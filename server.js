@@ -75,7 +75,7 @@ app.put('/contactlist/:id', function(req,res){
 
 
 
-app.listen(3000); // localhost 3k
+app.listen(process.env.PORT || 3000); // localhost 3k
 console.log("Server running on port 3000");
 // app.get('/',function(req,res){
 //   res.send("Hi Swappy")
